@@ -1,6 +1,6 @@
 package p684;
 
-public class MyFunctioninterface {
+public class MyFunctioninterfaceExample {
 
 	public static void main(String[] args) {
 
@@ -8,11 +8,11 @@ public class MyFunctioninterface {
 		
 		fi = (x,y) ->{
 			int result = x + y;
-			System.out.println(result);		      //오리지널 버전
+			return result;	      //오리지널 버전
 		};
 		System.out.println(fi.method(2, 5));
 		
-		fi = (x, y) -> {return x = y;};
+		fi = (x, y) -> {return x + y;};
 		System.out.println(fi.method(2, 5));
 
 		fi = (x,y) -> x+y;
